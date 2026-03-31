@@ -3,11 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Shreyas Baweja — Interview Thought Board</title>
+<title>Shreyas Baweja — Product Portfolio</title>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
   :root {
     --bg: #0a0a0f;
     --surface: #11111a;
@@ -21,9 +20,7 @@
     --muted: #888898;
     --card-glow: 0 0 40px rgba(200,245,100,0.04);
   }
-
   html { scroll-behavior: smooth; }
-
   body {
     font-family: 'DM Sans', sans-serif;
     background: var(--bg);
@@ -31,7 +28,6 @@
     min-height: 100vh;
     overflow-x: hidden;
   }
-
   /* NOISE TEXTURE */
   body::before {
     content: '';
@@ -42,7 +38,6 @@
     z-index: 0;
     opacity: 0.4;
   }
-
   /* HEADER */
   .header {
     padding: 56px 48px 40px;
@@ -80,6 +75,13 @@
     letter-spacing: -0.02em;
   }
   .header h1 span { color: var(--accent); }
+  .header-sub {
+    color: var(--muted);
+    font-size: 13px;
+    margin-top: 12px;
+    max-width: 480px;
+    line-height: 1.6;
+  }
   .header-meta {
     display: flex;
     flex-direction: column;
@@ -98,7 +100,6 @@
   .badge-green { background: rgba(200,245,100,0.12); color: var(--accent); border: 1px solid rgba(200,245,100,0.2); }
   .badge-purple { background: rgba(124,107,248,0.12); color: #a89bf8; border: 1px solid rgba(124,107,248,0.2); }
   .badge-orange { background: rgba(245,166,35,0.12); color: var(--accent3); border: 1px solid rgba(245,166,35,0.2); }
-
   /* NAV TABS */
   .nav-tabs {
     display: flex;
@@ -129,12 +130,10 @@
   }
   .tab-btn:hover { color: var(--text); background: var(--surface); }
   .tab-btn.active { background: rgba(200,245,100,0.1); color: var(--accent); border-color: rgba(200,245,100,0.2); }
-
   /* MAIN CONTENT */
   .content { padding: 40px 48px 80px; max-width: 1400px; }
   .section { display: none; }
   .section.active { display: block; }
-
   /* SECTION HEADER */
   .section-header {
     margin-bottom: 40px;
@@ -151,12 +150,10 @@
     max-width: 600px;
     line-height: 1.6;
   }
-
   /* GRID LAYOUTS */
   .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 20px; }
   .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
   .grid-4 { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }
-
   /* CARDS */
   .card {
     background: var(--surface);
@@ -182,12 +179,10 @@
     transition: opacity 0.3s;
   }
   .card:hover::before { opacity: 1; }
-
   .card-accent-green { border-top: 3px solid var(--accent); }
   .card-accent-purple { border-top: 3px solid var(--accent2); }
   .card-accent-orange { border-top: 3px solid var(--accent3); }
   .card-accent-pink { border-top: 3px solid var(--accent4); }
-
   .card-icon {
     width: 40px;
     height: 40px;
@@ -202,7 +197,6 @@
   .icon-purple { background: rgba(124,107,248,0.1); }
   .icon-orange { background: rgba(245,166,35,0.1); }
   .icon-pink { background: rgba(245,100,169,0.1); }
-
   .card h3 {
     font-family: 'Syne', sans-serif;
     font-size: 15px;
@@ -217,7 +211,6 @@
   }
   .card ul { padding-left: 16px; }
   .card li { margin-bottom: 4px; }
-
   .metric {
     font-family: 'Syne', sans-serif;
     font-size: 32px;
@@ -233,7 +226,6 @@
     letter-spacing: 0.1em;
     text-transform: uppercase;
   }
-
   /* FRAMEWORK FLOW */
   .flow-container {
     display: flex;
@@ -287,7 +279,6 @@
     font-family: 'DM Mono', monospace;
     line-height: 1.6;
   }
-
   /* TABLE */
   .data-table { width: 100%; border-collapse: collapse; font-size: 13px; }
   .data-table th {
@@ -309,7 +300,6 @@
   }
   .data-table tr:hover td { background: rgba(255,255,255,0.02); }
   .data-table .highlight { color: var(--accent); font-weight: 600; }
-
   /* PILL */
   .pill {
     display: inline-block;
@@ -324,7 +314,6 @@
   .pill-orange { background: rgba(245,166,35,0.1); color: var(--accent3); }
   .pill-pink { background: rgba(245,100,169,0.1); color: var(--accent4); }
   .pill-muted { background: rgba(255,255,255,0.06); color: var(--muted); }
-
   /* STORY CARD */
   .story-card {
     background: var(--surface);
@@ -370,14 +359,12 @@
     color: var(--text);
     line-height: 1.5;
   }
-
   /* DIVIDER */
   .divider {
     height: 1px;
     background: var(--border);
     margin: 36px 0;
   }
-
   /* QUOTE BLOCK */
   .quote-block {
     background: linear-gradient(135deg, rgba(200,245,100,0.06), rgba(124,107,248,0.06));
@@ -399,7 +386,6 @@
     display: block;
     margin-top: 8px;
   }
-
   /* TIER ROWS */
   .tier-row {
     display: grid;
@@ -421,7 +407,6 @@
   .tier-row .tier-label { color: var(--text); font-weight: 500; }
   .tier-row .tier-metric { color: var(--muted); font-size: 12px; }
   .tier-row .tier-horizon { color: var(--muted); font-size: 12px; font-family: 'DM Mono', monospace; }
-
   /* RADAR VISUAL */
   .signal-stack {
     display: flex;
@@ -462,14 +447,12 @@
     width: 36px;
     text-align: right;
   }
-
   /* RESPONSIVE */
   @media (max-width: 768px) {
     .header, .nav-tabs, .content { padding-left: 20px; padding-right: 20px; }
     .tier-row { grid-template-columns: 60px 1fr; }
     .tier-row .tier-metric, .tier-row .tier-horizon { display: none; }
   }
-
   /* ANIMATE IN */
   @keyframes fadeUp {
     from { opacity: 0; transform: translateY(16px); }
@@ -482,12 +465,10 @@
   .section.active .card:nth-child(2) { animation-delay: 0.1s; }
   .section.active .card:nth-child(3) { animation-delay: 0.15s; }
   .section.active .card:nth-child(4) { animation-delay: 0.2s; }
-
   /* WIDE CARD */
   .card-wide {
     grid-column: 1 / -1;
   }
-
   /* OVERLAP LABEL */
   .section-label {
     font-family: 'DM Mono', monospace;
@@ -513,12 +494,14 @@
 <!-- HEADER -->
 <div class="header">
   <div>
-    <div class="header-tag">Interview Thought Board</div>
-    <h1>Formel Skin <span>→ Voy</span><br>Senior PM</h1>
+    <div class="header-tag">Product Portfolio</div>
+    <h1>Shreyas <span>Baweja</span><br>Staff PM</h1>
+    <p class="header-sub">Growth experimentation, subscription commerce, and AI-augmented product development — across fashion, health, and platform-scale businesses.</p>
   </div>
   <div class="header-meta">
-    <div class="badge badge-green">Senior PM · CRO · AI</div>
-    <div class="badge badge-purple">Shreyas Baweja</div>
+    <div class="badge badge-green">Staff PM · Growth · CRO · AI</div>
+    <div class="badge badge-purple">Experimentation · Subscriptions</div>
+    <div class="badge badge-orange">7 Years · Cross-Functional</div>
   </div>
 </div>
 
@@ -529,8 +512,8 @@
   <button class="tab-btn" onclick="showTab('stories')">Impact Stories</button>
   <button class="tab-btn" onclick="showTab('metrics')">Metric Tiers</button>
   <button class="tab-btn" onclick="showTab('ai')">AI Applications</button>
-  <button class="tab-btn" onclick="showTab('formel')">Formel Skin Angle</button>
-  <button class="tab-btn" onclick="showTab('firepower')">Roy Q&A Firepower</button>
+  <button class="tab-btn" onclick="showTab('domain')">Domain Expertise</button>
+  <button class="tab-btn" onclick="showTab('principles')">PM Principles</button>
 </div>
 
 <!-- CONTENT -->
@@ -540,82 +523,76 @@
   <div id="overview" class="section active">
     <div class="section-header">
       <h2>Your USP at a Glance</h2>
-      <p>What makes Shreyas uniquely qualified — distilled for Roy's VC lens.</p>
+      <p>Seven years of subscription growth, experimentation at scale, and business-model-fluent product leadership — distilled.</p>
     </div>
-
     <div class="grid-4" style="margin-bottom: 28px;">
       <div class="card card-accent-green">
         <div class="metric">120%</div>
         <div class="metric-label">Funnel CVR Growth</div>
-        <p style="margin-top: 12px; font-size: 12px;">Over 4 years at Outfittery. CAC held flat — the part that matters to investors.</p>
+        <p style="margin-top: 12px; font-size: 12px;">Over four years leading subscription growth at scale. CAC held flat — proving quality and efficiency are not a trade-off.</p>
       </div>
       <div class="card card-accent-purple">
         <div class="metric">40+</div>
         <div class="metric-label">A/B Tests Run</div>
-        <p style="margin-top: 12px; font-size: 12px;">Multi-team ownership. Styled fee, preview UX, subscription defaults — each with a story.</p>
+        <p style="margin-top: 12px; font-size: 12px;">Multi-team ownership across onboarding, checkout, and subscription flows — each experiment with a documented story and downstream measurement.</p>
       </div>
       <div class="card card-accent-orange">
         <div class="metric">€20M</div>
         <div class="metric-label">ARR — 0 to 1</div>
-        <p style="margin-top: 12px; font-size: 12px;">Womenswear vertical. Launched MVP, scaled profitably across international markets.</p>
+        <p style="margin-top: 12px; font-size: 12px;">Womenswear vertical. Launched MVP, validated pricing model, scaled profitably across international markets.</p>
       </div>
       <div class="card card-accent-pink">
         <div class="metric">€3M+</div>
         <div class="metric-label">UX Overhaul Revenue</div>
-        <p style="margin-top: 12px; font-size: 12px;">Preview UX rebuild. +15% retention, +€30 AOV via behavioural personalisation.</p>
+        <p style="margin-top: 12px; font-size: 12px;">Preview UX rebuild. +15% retention, +€30 AOV via behavioural personalisation and signal-driven product design.</p>
       </div>
     </div>
-
     <div class="section-label">Core Differentiators</div>
-
     <div class="grid-3">
       <div class="card">
         <div class="card-icon icon-green">🔬</div>
         <h3>Conversion Science over CRO Tactics</h3>
-        <p>You don't just run A/B tests. You built a five-layer experimentation system — signals → hypothesis → protocol → governance → knowledge. Roy wants to see the system, not just the outcomes.</p>
+        <p>Not just A/B tests — a five-layer experimentation system: signals → hypothesis → protocol → governance → knowledge. Strong leadership wants to see the system, not just the outcomes.</p>
       </div>
       <div class="card">
         <div class="card-icon icon-purple">🧠</div>
         <h3>Quality-Adjusted Conversion Thinking</h3>
-        <p>Your strongest belief: optimising CVR is the wrong goal. Optimise for <em>quality</em> conversion. You accepted a 20% CVR drop → cancellations halved. This is your differentiator versus any generic CRO candidate.</p>
+        <p>The strongest belief: optimising CVR is the wrong goal. Optimise for <em>quality</em> conversion. Accepted a 20% CVR drop → cancellations halved. This is the differentiator versus any generic CRO background.</p>
       </div>
       <div class="card">
         <div class="card-icon icon-orange">📡</div>
         <h3>Downstream Metric Ownership</h3>
-        <p>You noticed 60% of drop-off was post-acquisition and nobody owned it. You picked it up. That's senior PM instinct — finding the unowned problem with the biggest business impact.</p>
+        <p>Noticed 60% of drop-off was post-acquisition and nobody owned it. Picked it up. That's Staff PM instinct — finding the unowned problem with the biggest business impact.</p>
       </div>
       <div class="card">
         <div class="card-icon icon-pink">🤝</div>
         <h3>Trust as Conversion Architecture</h3>
-        <p>In fashion, customers can return. At Voy, they're trusting with their skin and health. Every conversion decision must account for clarity, reassurance, and genuine confidence. That's richer than click optimisation.</p>
+        <p>In transactional commerce, customers can return. In subscription health, they trust with their body and their outcomes. Every conversion decision must account for clarity, reassurance, and genuine confidence — that's richer than click optimisation.</p>
       </div>
       <div class="card">
         <div class="card-icon icon-green">⚡</div>
         <h3>Cross-Functional Flywheel</h3>
-        <p>You made experimentation a company-wide behaviour — not just a product team activity. Marketing, CRM, and performance teams co-owned tests. Culture = sustainable. Tools = replaceable.</p>
+        <p>Made experimentation a company-wide behaviour — not just a product team activity. Marketing, CRM, and performance teams co-owned tests. Culture = sustainable. Tools = replaceable.</p>
       </div>
       <div class="card">
         <div class="card-icon icon-purple">🚀</div>
         <h3>Investor-Level Narrative Translation</h3>
-        <p>The subscription defaults change became part of the investor story. You understand how product decisions connect to business model and funding narrative — critical at Voy's growth stage.</p>
+        <p>The subscription defaults change became part of the investor story. Understanding how product decisions connect to business model and funding narrative is critical at any growth-stage company.</p>
       </div>
     </div>
-
     <div class="quote-block">
-      "I don't just launch products — I build frameworks that deliver consistent and measurable growth. At Formel Skin, the trust dimension changes how you think about every conversion decision. You can't optimise for a click. You have to optimise for someone's confidence in their own skin."
-      <strong>— Your differentiating closer, every answer</strong>
+      "I don't just launch products — I build frameworks that deliver consistent and measurable growth. In subscription health, the trust dimension changes how you think about every conversion decision. You can't optimise for a click. You have to optimise for someone's confidence in their own outcome."
+      <strong>— Differentiating perspective on growth in trust-dependent subscription categories</strong>
     </div>
   </div>
 
   <!-- CRO FRAMEWORK -->
   <div id="framework" class="section">
     <div class="section-header">
-      <h2>Your Experimentation Framework</h2>
-      <p>The five-layer system you built from scratch at Outfittery — show Roy the architecture, not just the outcomes.</p>
+      <h2>Experimentation Framework</h2>
+      <p>A five-layer system built from scratch — show the architecture, not just the outcomes. Tools are the easy part. Governance and knowledge are the hard parts.</p>
     </div>
-
     <div class="section-label">Signal Stack — Four Sources, Four Dimensions</div>
-
     <div class="grid-4" style="margin-bottom: 32px;">
       <div class="card card-accent-green">
         <div class="card-icon icon-green">📊</div>
@@ -642,9 +619,7 @@
         <div style="margin-top: 12px;"><span class="pill pill-pink">Observational</span></div>
       </div>
     </div>
-
     <div class="section-label">Five-Layer Framework</div>
-
     <div class="flow-container">
       <div class="flow-step">
         <div class="step-num">01</div>
@@ -672,48 +647,45 @@
         <div class="step-tools">Failures shared publicly<br>Every test documented</div>
       </div>
     </div>
-
     <div class="section-label">Test Design Rules</div>
-
     <div style="background: var(--surface); border: 1px solid var(--border); border-radius: 16px; overflow: hidden; margin-bottom: 32px;">
       <div class="tier-row" style="background: var(--surface2);">
         <div class="tier-num">RULE</div>
         <div class="tier-label" style="font-family: 'DM Mono', monospace; font-size: 10px; color: var(--muted); letter-spacing: 0.1em; text-transform: uppercase;">Description</div>
         <div class="tier-metric" style="font-family: 'DM Mono', monospace; font-size: 10px; color: var(--muted); letter-spacing: 0.1em; text-transform: uppercase;">Why</div>
-        <div class="tier-horizon" style="font-family: 'DM Mono', monospace; font-size: 10px; color: var(--muted); letter-spacing: 0.1em; text-transform: uppercase;">Formel Skin</div>
+        <div class="tier-horizon" style="font-family: 'DM Mono', monospace; font-size: 10px; color: var(--muted); letter-spacing: 0.1em; text-transform: uppercase;">Health Commerce Application</div>
       </div>
       <div class="tier-row">
         <div class="tier-num">Baseline</div>
         <div class="tier-label">30-day rolling average CVR, never 7-day</div>
         <div class="tier-metric">Paid traffic spikes distort weekly data</div>
-        <div class="tier-horizon" style="color: var(--accent); font-size: 12px;">Paid CAC cycles create weekly volatility</div>
+        <div class="tier-horizon" style="color: var(--accent); font-size: 12px;">Paid CAC cycles create weekly volatility in subscription health</div>
       </div>
       <div class="tier-row">
         <div class="tier-num">MDE</div>
         <div class="tier-label">Smallest business-meaningful lift (10–15% relative)</div>
         <div class="tier-metric">Too small = enormous sample needed</div>
-        <div class="tier-horizon" style="color: var(--accent); font-size: 12px;">Define based on subscriber economics, not vanity</div>
+        <div class="tier-horizon" style="color: var(--accent); font-size: 12px;">Define based on subscriber unit economics, not vanity</div>
       </div>
       <div class="tier-row">
         <div class="tier-num">Power</div>
         <div class="tier-label">80% power, 95% confidence, two-tailed. Always a calculator.</div>
         <div class="tier-metric">Under-powered = false negatives</div>
-        <div class="tier-horizon" style="color: var(--accent); font-size: 12px;">Medical context: never call a clinical win early</div>
+        <div class="tier-horizon" style="color: var(--accent); font-size: 12px;">In high-trust contexts: never call a clinical win early</div>
       </div>
       <div class="tier-row">
         <div class="tier-num">Duration</div>
         <div class="tier-label">Min. 2 full business cycles. End date locked before launch.</div>
         <div class="tier-metric">Day-of-week effects distort early data</div>
-        <div class="tier-horizon" style="color: var(--accent); font-size: 12px;">Add 60-day cancellation guardrail on plan tests</div>
+        <div class="tier-horizon" style="color: var(--accent); font-size: 12px;">Add 60-day cancellation guardrail on all subscription plan tests</div>
       </div>
       <div class="tier-row">
         <div class="tier-num">Guardrails</div>
         <div class="tier-label">AOV + cancellation rate + LTV proxy always tracked alongside CVR</div>
         <div class="tier-metric">CVR win that hurts LTV = delayed write-down</div>
-        <div class="tier-horizon" style="color: var(--accent); font-size: 12px;">Treatment completion rate is the real KPI here</div>
+        <div class="tier-horizon" style="color: var(--accent); font-size: 12px;">Treatment completion rate is the real north-star KPI in health</div>
       </div>
     </div>
-
     <div class="section-label">Prioritisation Logic</div>
     <div class="grid-2">
       <div class="card">
@@ -749,76 +721,76 @@
   <div id="stories" class="section">
     <div class="section-header">
       <h2>Impact Stories — STAR Format</h2>
-      <p>Your real evidence. Each story mapped to a Roy question. Always land on the Formel Skin connection.</p>
+      <p>Real evidence of product leadership. Each story maps to a domain of expertise. Every one lands on a business outcome.</p>
     </div>
 
     <div class="story-card">
       <div class="story-header">
         <h3>📋 The Informative Step — Quality Conversion</h3>
-        <span class="pill pill-green">Roy Q5 · Q10 · Q11</span>
+        <span class="pill pill-green">Quality · LTV · Conversion</span>
       </div>
       <div class="story-body">
-        <div class="story-cell"><div class="story-cell-label">Situation</div><div class="story-cell-value">20% cancellation rate on new orders. Marketing owned CVR metric. Nobody owned downstream quality.</div></div>
-        <div class="story-cell"><div class="story-cell-label">Task</div><div class="story-cell-value">Improve order quality without acceptable CVR degradation narrative to stakeholders.</div></div>
+        <div class="story-cell"><div class="story-cell-label">Situation</div><div class="story-cell-value">20% cancellation rate on new orders. Marketing owned the CVR metric. Nobody owned downstream quality.</div></div>
+        <div class="story-cell"><div class="story-cell-label">Task</div><div class="story-cell-value">Improve order quality without an acceptable CVR degradation narrative to stakeholders.</div></div>
         <div class="story-cell"><div class="story-cell-label">Action</div><div class="story-cell-value">Built business case with LTV model. Proposed informative pre-payment step. Deliberately accepted 20% CVR drop. Got alignment via data story, not opinion.</div></div>
         <div class="story-cell"><div class="story-cell-label">Result</div><div class="story-cell-value">Cancellations: 20% → 10%. AOV stable. LTV improved. Marketing team now co-owns experimentation.</div></div>
-        <div class="story-cell"><div class="story-cell-label">Formel Skin Link</div><div class="story-cell-value">Questionnaire → plan selection at Voy has the same risk: converting anxious customers who cancel in break-in phase. Same fix applies.</div></div>
+        <div class="story-cell"><div class="story-cell-label">Application</div><div class="story-cell-value">Medical onboarding and subscription health flows carry the same risk: converting anxious customers who cancel in the break-in phase. Same informative step mechanic applies.</div></div>
       </div>
     </div>
 
     <div class="story-card">
       <div class="story-header">
         <h3>🎨 Preview UX Rebuild — Behavioural Personalisation</h3>
-        <span class="pill pill-purple">Roy Q1 · Q5</span>
+        <span class="pill pill-purple">Retention · AOV · Personalisation</span>
       </div>
       <div class="story-body">
-        <div class="story-cell"><div class="story-cell-label">Situation</div><div class="story-cell-value">€80M portfolio. Customer churn driven by passive experience — customers not engaged before order packed.</div></div>
-        <div class="story-cell"><div class="story-cell-label">Task</div><div class="story-cell-value">Improve retention and AOV without increasing CAC. Behavioural overhaul of Preview UX.</div></div>
-        <div class="story-cell"><div class="story-cell-label">Action</div><div class="story-cell-value">Hyper-personalised journey using behavioural signals. Users could voice preferences pre-pack. Iterated with recordings + surveys.</div></div>
-        <div class="story-cell"><div class="story-cell-label">Result</div><div class="story-cell-value">+€3M incremental revenue. +15% retention. +€30 AOV. Became model for behaviour-led product design at Outfittery.</div></div>
-        <div class="story-cell"><div class="story-cell-label">Formel Skin Link</div><div class="story-cell-value">Break-in phase treatment page at Voy. Personalised doctor-attributed summary using questionnaire data = same mechanism.</div></div>
+        <div class="story-cell"><div class="story-cell-label">Situation</div><div class="story-cell-value">€80M portfolio. Customer churn driven by passive experience — customers not engaged before order was packed.</div></div>
+        <div class="story-cell"><div class="story-cell-label">Task</div><div class="story-cell-value">Improve retention and AOV without increasing CAC. Behavioural overhaul of the pre-delivery UX.</div></div>
+        <div class="story-cell"><div class="story-cell-label">Action</div><div class="story-cell-value">Hyper-personalised journey using behavioural signals. Users could voice preferences pre-pack. Iterated with session recordings and exit surveys.</div></div>
+        <div class="story-cell"><div class="story-cell-label">Result</div><div class="story-cell-value">+€3M incremental revenue. +15% retention. +€30 AOV. Became the model for behaviour-led product design across the business.</div></div>
+        <div class="story-cell"><div class="story-cell-label">Application</div><div class="story-cell-value">In subscription health contexts, personalised treatment summaries using intake data drive the same mechanism — shifting passive recipients into active participants.</div></div>
       </div>
     </div>
 
     <div class="story-card">
       <div class="story-header">
         <h3>⚠️ Styling Fee Experiment — Test Rigour Under Pressure</h3>
-        <span class="pill pill-orange">Roy Q7 · Q4</span>
+        <span class="pill pill-orange">Test Rigour · Governance</span>
       </div>
       <div class="story-body">
         <div class="story-cell"><div class="story-cell-label">Situation</div><div class="story-cell-value">Accidental low-season test on wrong segment showed 50%+ AOV uplift. 95% confidence. Looked extraordinary.</div></div>
-        <div class="story-cell"><div class="story-cell-label">Task</div><div class="story-cell-value">Advocated hard to validate at scale. Ran structured follow-up experiments.</div></div>
-        <div class="story-cell"><div class="story-cell-label">Action</div><div class="story-cell-value">Result collapsed. Novelty effect + seasonal distortion + wrong segment = misleading data.</div></div>
-        <div class="story-cell"><div class="story-cell-label">Result</div><div class="story-cell-value">Written up transparently. Team now treats every statistically valid result as hypothesis until replicated across seasons and scale.</div></div>
-        <div class="story-cell"><div class="story-cell-label">Formel Skin Link</div><div class="story-cell-value">Clinical context amplifies this risk. One test on plan selection CVR during a promotion window can mislead badly. Always need 60-90 day cancellation guardrail.</div></div>
+        <div class="story-cell"><div class="story-cell-label">Task</div><div class="story-cell-value">Advocated hard to validate at scale before declaring a win.</div></div>
+        <div class="story-cell"><div class="story-cell-label">Action</div><div class="story-cell-value">Ran structured follow-up experiments. Result collapsed. Novelty effect + seasonal distortion + wrong segment = misleading data.</div></div>
+        <div class="story-cell"><div class="story-cell-label">Result</div><div class="story-cell-value">Written up transparently. Team now treats every statistically valid result as a hypothesis until replicated across seasons and scale.</div></div>
+        <div class="story-cell"><div class="story-cell-label">Application</div><div class="story-cell-value">In health commerce, one test on plan selection CVR during a promotional window can mislead badly. Always pair with a 60–90 day cancellation guardrail.</div></div>
       </div>
     </div>
 
     <div class="story-card">
       <div class="story-header">
         <h3>🚀 Subscription Defaults — Investor Narrative Creation</h3>
-        <span class="pill pill-pink">Roy Q9 · Q13</span>
+        <span class="pill pill-pink">Subscriptions · Investor Narrative</span>
       </div>
       <div class="story-body">
         <div class="story-cell"><div class="story-cell-label">Situation</div><div class="story-cell-value">Subscription model underperforming. Default opt-in/opt-out logic not optimised. Most customers on one-time purchases.</div></div>
         <div class="story-cell"><div class="story-cell-label">Task</div><div class="story-cell-value">Improve subscription attachment rate without hurting acquisition CVR or customer trust.</div></div>
         <div class="story-cell"><div class="story-cell-label">Action</div><div class="story-cell-value">Tested subscription-forward defaults with clear trust signals. Iterated messaging. Measured both short-term CVR and 30-day subscription continuation.</div></div>
-        <div class="story-cell"><div class="story-cell-label">Result</div><div class="story-cell-value">Subscription rate improvement became part of investor story. Demonstrated product decisions can shape funding narrative.</div></div>
-        <div class="story-cell"><div class="story-cell-label">Formel Skin Link</div><div class="story-cell-value">Plan tier default selection at Voy has the same leverage. Optimise for the subscription tier that maximises LTV and clinical compliance, not just the easiest conversion.</div></div>
+        <div class="story-cell"><div class="story-cell-label">Result</div><div class="story-cell-value">Subscription rate improvement became part of the investor story. Demonstrated that product decisions can directly shape the funding narrative.</div></div>
+        <div class="story-cell"><div class="story-cell-label">Application</div><div class="story-cell-value">Plan tier default selection in any subscription business has the same leverage. Optimise for the tier that maximises LTV and compliance, not just the easiest conversion.</div></div>
       </div>
     </div>
 
     <div class="story-card">
       <div class="story-header">
-        <h3>🌍 UK Market Launch — GTM + CRM Localisation</h3>
-        <span class="pill pill-muted">Cross-functional · Expansion</span>
+        <h3>🌍 International Market Launch — GTM + CRM Localisation</h3>
+        <span class="pill pill-muted">Cross-Functional · Expansion</span>
       </div>
       <div class="story-body">
-        <div class="story-cell"><div class="story-cell-label">Situation</div><div class="story-cell-value">Target: €5M ARR from UK market. No existing localisation infrastructure. New pricing model untested.</div></div>
+        <div class="story-cell"><div class="story-cell-label">Situation</div><div class="story-cell-value">Target: €5M ARR from a new market. No existing localisation infrastructure. New pricing model untested.</div></div>
         <div class="story-cell"><div class="story-cell-label">Task</div><div class="story-cell-value">Own full GTM — strategy, CRM localisation, rollout phases, performance monitoring.</div></div>
-        <div class="story-cell"><div class="story-cell-label">Action</div><div class="story-cell-value">Rapid pricing + monetisation model prototyping via lean experiments. Validated styling fees. Phased rollout with tight feedback loops.</div></div>
-        <div class="story-cell"><div class="story-cell-label">Result</div><div class="story-cell-value">>100% uplift in customer conversion. Improved mobile stability 95% → 99%+ crash-free. Expanded YourShop repeat purchase +8%.</div></div>
-        <div class="story-cell"><div class="story-cell-label">Formel Skin Link</div><div class="story-cell-value">Voy expanding across health verticals internationally. Same cross-market product discipline — GTM, localised trust signals, subscription model validation.</div></div>
+        <div class="story-cell"><div class="story-cell-label">Action</div><div class="story-cell-value">Rapid pricing and monetisation model prototyping via lean experiments. Validated service fees. Phased rollout with tight feedback loops.</div></div>
+        <div class="story-cell"><div class="story-cell-label">Result</div><div class="story-cell-value">&gt;100% uplift in customer conversion. Improved mobile stability 95% → 99%+ crash-free. Expanded repeat purchase rate +8%.</div></div>
+        <div class="story-cell"><div class="story-cell-label">Application</div><div class="story-cell-value">Expanding across health verticals internationally requires the same cross-market product discipline — localised trust signals, subscription model validation, and channel-specific CVR segmentation.</div></div>
       </div>
     </div>
   </div>
@@ -827,21 +799,20 @@
   <div id="metrics" class="section">
     <div class="section-header">
       <h2>Metric Tiers — Long-Term Impact Measurement</h2>
-      <p>How you measure beyond immediate CVR lift. Shows Roy you think in business outcomes, not funnel metrics.</p>
+      <p>How to measure beyond immediate CVR lift. Thinking in business outcomes, not funnel metrics — from signal to clinical.</p>
     </div>
-
     <div style="background: var(--surface); border: 1px solid var(--border); border-radius: 16px; overflow: hidden; margin-bottom: 32px;">
       <div class="tier-row" style="background: var(--surface2);">
         <div class="tier-num" style="font-family: 'DM Mono', monospace; font-size: 10px; color: var(--muted); letter-spacing: 0.1em; text-transform: uppercase;">TIER</div>
         <div class="tier-label" style="font-family: 'DM Mono', monospace; font-size: 10px; color: var(--muted); letter-spacing: 0.1em; text-transform: uppercase;">What You Measure</div>
         <div class="tier-metric" style="font-family: 'DM Mono', monospace; font-size: 10px; color: var(--muted); letter-spacing: 0.1em; text-transform: uppercase;">Horizon</div>
-        <div class="tier-horizon" style="font-family: 'DM Mono', monospace; font-size: 10px; color: var(--muted); letter-spacing: 0.1em; text-transform: uppercase;">Voy-Specific</div>
+        <div class="tier-horizon" style="font-family: 'DM Mono', monospace; font-size: 10px; color: var(--muted); letter-spacing: 0.1em; text-transform: uppercase;">Subscription Application</div>
       </div>
       <div class="tier-row">
         <div class="tier-num">T1 — Signal</div>
         <div class="tier-label">Step CVR, form drop-off, completion rate</div>
         <div class="tier-metric">0–7 days</div>
-        <div class="tier-horizon" style="color: var(--accent); font-size: 12px;">Questionnaire completion by step</div>
+        <div class="tier-horizon" style="color: var(--accent); font-size: 12px;">Onboarding questionnaire completion by step</div>
       </div>
       <div class="tier-row">
         <div class="tier-num">T2 — Activation</div>
@@ -853,27 +824,25 @@
         <div class="tier-num">T3 — LTV Signal</div>
         <div class="tier-label">AOV trajectory, plan upgrades, upsell rate</div>
         <div class="tier-metric">60–180 days</div>
-        <div class="tier-horizon" style="color: var(--accent); font-size: 12px;">Plan tier upgrades post-break-in phase</div>
+        <div class="tier-horizon" style="color: var(--accent); font-size: 12px;">Plan tier upgrades post-activation phase</div>
       </div>
       <div class="tier-row">
         <div class="tier-num">T4 — Business</div>
         <div class="tier-label">CAC/LTV ratio, payback period, cohort contribution margin</div>
         <div class="tier-metric">Quarterly</div>
-        <div class="tier-horizon" style="color: var(--accent); font-size: 12px;">Subscriber unit economics by channel</div>
+        <div class="tier-horizon" style="color: var(--accent); font-size: 12px;">Subscriber unit economics by acquisition channel</div>
       </div>
       <div class="tier-row" style="border-bottom: none;">
         <div class="tier-num" style="color: var(--accent4);">T5 — Clinical</div>
         <div class="tier-label" style="color: var(--accent4);">Treatment completion rate, compliance, break-in phase retention</div>
         <div class="tier-metric">Ongoing</div>
-        <div class="tier-horizon" style="color: var(--accent4); font-size: 12px;">Voy-specific. No fashion equivalent.</div>
+        <div class="tier-horizon" style="color: var(--accent4); font-size: 12px;">Subscription health-specific. No direct fashion equivalent.</div>
       </div>
     </div>
-
     <div class="quote-block">
-      "The downstream metric was the real metric. At Voy, the month-1 cancellation rate is the metric that exposes whether your conversion was quality conversion."
-      <strong>— Use this when Roy asks about long-term impact measurement</strong>
+      "The downstream metric was the real metric. In any subscription business, the month-1 cancellation rate is the metric that exposes whether your conversion was quality conversion."
+      <strong>— Use this when asked about long-term impact measurement</strong>
     </div>
-
     <div class="section-label">Passive vs Active Churn</div>
     <div class="grid-2">
       <div class="card card-accent-green">
@@ -903,9 +872,8 @@
   <div id="ai" class="section">
     <div class="section-header">
       <h2>AI Applications — Tool vs Product</h2>
-      <p>Be honest with Roy about where you sit. Show curiosity and a concrete roadmap. Don't overclaim.</p>
+      <p>Where AI sits today versus where it's going. A concrete roadmap grounded in honest capability assessment.</p>
     </div>
-
     <div class="grid-2" style="margin-bottom: 32px;">
       <div class="card card-accent-green">
         <div class="card-icon icon-green">🛠️</div>
@@ -922,18 +890,16 @@
       <div class="card card-accent-purple">
         <div class="card-icon icon-purple">🤖</div>
         <h3>AI-Driven Product (Horizon)</h3>
-        <p>AI is the core value delivery mechanism. The model's behaviour IS the product. 12–24 month horizon at Voy.</p>
+        <p>AI is the core value delivery mechanism. The model's behaviour IS the product. 12–24 month horizon in subscription health.</p>
         <ul style="margin-top: 12px;">
           <li>Adaptive treatment protocols by outcomes</li>
-          <li>Personalised doctor-attributed summaries</li>
+          <li>Personalised clinician-attributed summaries</li>
           <li>Real-time drop-off prediction + intervention</li>
-          <li>LLM questionnaire optimisation</li>
+          <li>LLM onboarding questionnaire optimisation</li>
         </ul>
       </div>
     </div>
-
-    <div class="section-label">Three Concrete AI Levers for Formel Skin / Voy</div>
-
+    <div class="section-label">Three Concrete AI Levers for Subscription Health Commerce</div>
     <div style="display: flex; flex-direction: column; gap: 16px;">
       <div class="card" style="display: grid; grid-template-columns: 100px 1fr 160px; gap: 24px; align-items: start;">
         <div>
@@ -942,7 +908,7 @@
         </div>
         <div>
           <h3>Drop-Off Prediction</h3>
-          <p style="margin-top: 6px;">Use session-level behavioural signals — time per questionnaire question, scroll depth, photo upload hesitation — as features to flag high-risk drop-off profiles in real time. Trigger targeted interventions: a trust signal, progress indicator, or simplified copy variant per segment.</p>
+          <p style="margin-top: 6px;">Use session-level behavioural signals — time per onboarding question, scroll depth, photo upload hesitation — as features to flag high-risk drop-off profiles in real time. Trigger targeted interventions: a trust signal, progress indicator, or simplified copy variant per segment.</p>
         </div>
         <div style="background: var(--surface2); border-radius: 10px; padding: 12px;">
           <div class="story-cell-label">Impact</div>
@@ -950,7 +916,6 @@
           <div style="font-size: 11px; color: var(--muted); margin-top: 4px;">Questionnaire completion rate</div>
         </div>
       </div>
-
       <div class="card" style="display: grid; grid-template-columns: 100px 1fr 160px; gap: 24px; align-items: start;">
         <div>
           <div class="pill pill-purple" style="font-size: 12px; padding: 6px 14px;">Lever 2</div>
@@ -958,7 +923,7 @@
         </div>
         <div>
           <h3>LLM Questionnaire Optimisation</h3>
-          <p style="margin-top: 6px;">Analyse which phrasings correlate with hesitation or drop-off. Generate clearer, confidence-building alternatives. A/B test new phrasings without changing clinical data collected. <em>"Do you experience comedones?"</em> → <em>"Do you have blackheads or whiteheads?"</em> — same signal, less anxiety.</p>
+          <p style="margin-top: 6px;">Analyse which phrasings correlate with hesitation or drop-off. Generate clearer, confidence-building alternatives. A/B test new phrasings without changing the clinical data collected. <em>"Do you experience comedones?"</em> → <em>"Do you have blackheads or whiteheads?"</em> — same signal, less anxiety.</p>
         </div>
         <div style="background: var(--surface2); border-radius: 10px; padding: 12px;">
           <div class="story-cell-label">Impact</div>
@@ -966,7 +931,6 @@
           <div style="font-size: 11px; color: var(--muted); margin-top: 4px;">Questionnaire completion quality</div>
         </div>
       </div>
-
       <div class="card" style="display: grid; grid-template-columns: 100px 1fr 160px; gap: 24px; align-items: start;">
         <div>
           <div class="pill pill-orange" style="font-size: 12px; padding: 6px 14px;">Lever 3</div>
@@ -974,7 +938,7 @@
         </div>
         <div>
           <h3>Personalised Plan Narrative</h3>
-          <p style="margin-top: 6px;">Use questionnaire outputs to dynamically generate a "your treatment plan explained" summary in plain language, attributed to the assigned dermatologist. Bridges the gap between "signed up" and "I understand why this is right for me" — directly targeting break-in phase churn.</p>
+          <p style="margin-top: 6px;">Use onboarding outputs to dynamically generate a "your treatment plan explained" summary in plain language, attributed to the assigned clinician. Bridges the gap between "signed up" and "I understand why this is right for me" — directly targeting break-in phase churn.</p>
         </div>
         <div style="background: var(--surface2); border-radius: 10px; padding: 12px;">
           <div class="story-cell-label">Impact</div>
@@ -983,154 +947,146 @@
         </div>
       </div>
     </div>
-
     <div class="quote-block">
       "I use AI as a force multiplier for judgment I already have — not a replacement for it. Any AI-generated content in a health context needs a clinical review layer. The risk isn't hallucination — it's AI optimising for conversion on a signal that doesn't correlate with clinical fit."
-      <strong>— Proactively flag the risk. Roy will respect it.</strong>
+      <strong>— Proactively flagging the risk is a differentiator. Leaders respect it.</strong>
     </div>
   </div>
 
-  <!-- FORMEL SKIN ANGLE -->
-  <div id="formel" class="section">
+  <!-- DOMAIN EXPERTISE -->
+  <div id="domain" class="section">
     <div class="section-header">
-      <h2>Formel Skin → Voy Specific Angles</h2>
-      <p>What differentiates this application from any generic CRO candidate. Embed Voy's platform vision everywhere.</p>
+      <h2>Health Commerce — Domain Expertise</h2>
+      <p>What differentiates a PM with subscription health experience from a generic growth background. The trust dimension changes everything.</p>
     </div>
-
     <div class="grid-2">
       <div class="card card-accent-green">
         <div class="card-icon icon-green">🏥</div>
-        <h3>Trust Dimension — Health vs Fashion</h3>
-        <p>At Outfittery, customers can return a box. At Voy, they trust with their skin, health, and confidence. That changes how you think about every conversion decision.</p>
+        <h3>Trust Dimension — Health vs Transactional Commerce</h3>
+        <p>In fashion subscription, a customer can return a box if it's wrong. In health subscription, they trust you with their body, their confidence, and their outcomes. That changes how you think about every conversion decision.</p>
         <p style="margin-top: 10px;">You can't just optimise for click-through — you must optimise for <strong style="color: var(--accent);">clarity, reassurance, and genuine confidence</strong> at every touchpoint.</p>
       </div>
       <div class="card card-accent-purple">
         <div class="card-icon icon-purple">🔄</div>
-        <h3>Break-In Phase = Your Cancellation Story</h3>
-        <p>Voy's break-in phase where irritation feels like treatment failure is the direct equivalent of Outfittery's 20% cancellation problem — customer expectations misaligned with reality at the point of first delivery.</p>
-        <p style="margin-top: 10px;"><strong style="color: #a89bf8;">Your fix:</strong> Informative step pre-commitment + personalised break-in narrative post-onboarding.</p>
+        <h3>Break-In Phase = The Post-Acquisition Loyalty Problem</h3>
+        <p>The break-in phase in prescription health — where initial adjustment is misread as product failure — is the direct equivalent of the 20% cancellation problem in subscription commerce: customer expectations misaligned with reality at the moment of first delivery.</p>
+        <p style="margin-top: 10px;"><strong style="color: #a89bf8;">The fix:</strong> Informative step pre-commitment + personalised break-in narrative post-onboarding.</p>
       </div>
       <div class="card card-accent-orange">
         <div class="card-icon icon-orange">📋</div>
-        <h3>Questionnaire = Outfittery's Style Survey</h3>
-        <p>The medical onboarding funnel is the primary conversion lever — exactly the same as style-matching questionnaire flows you've optimised for four years. Same mechanics, higher stakes.</p>
+        <h3>Medical Onboarding = High-Stakes Style Survey</h3>
+        <p>Medical onboarding funnels are the primary conversion lever in prescription health — exactly the same mechanics as style-matching questionnaire flows, but with higher stakes and a clinical review layer.</p>
         <ul style="margin-top: 10px;">
-          <li>Question phrasing affects completion</li>
-          <li>Adaptive branching improves accuracy</li>
-          <li>Trust signals at anxiety points = lift</li>
+          <li>Question phrasing affects completion rate</li>
+          <li>Adaptive branching improves outcome accuracy</li>
+          <li>Trust signals at anxiety points create measurable lift</li>
         </ul>
       </div>
       <div class="card card-accent-pink">
         <div class="card-icon icon-pink">🌍</div>
-        <h3>Voy Platform Vision — Cross-Vertical PM</h3>
-        <p>The rebrand from Formel Skin to Voy signals expansion: derma → weight loss → menopause → hair loss. This is a platform-level CRO opportunity, not just a skin product.</p>
-        <p style="margin-top: 10px;">Your counter question for Roy: <em>"How does the team currently think about shared experimentation infrastructure vs vertical-specific product decisions?"</em></p>
+        <h3>Platform Vision — Cross-Vertical PM Thinking</h3>
+        <p>Leading health commerce platforms are expanding from single verticals to full-spectrum health: dermatology → weight management → hormonal health → hair restoration. This is a platform-level CRO opportunity — not just a product.</p>
+        <p style="margin-top: 10px;">The critical question: <em>"How does the team think about shared experimentation infrastructure vs vertical-specific product decisions? That shapes how roadmap priorities compound — or stay siloed."</em></p>
       </div>
     </div>
-
     <div class="divider"></div>
     <div class="section-label">What "Best in Class CVR" Scenario Reveals</div>
-
     <div class="grid-3">
       <div class="card">
         <h3>📈 Activation Quality First</h3>
-        <p>Best-in-class acquisition CVR means nothing if 40% cancel during break-in phase. Move immediately to month-1 activation — the gap between "signed up" and "positive first 30-day outcome."</p>
+        <p>Best-in-class acquisition CVR means nothing if 40% cancel during the break-in phase. Move immediately to month-1 activation — the gap between "signed up" and "positive first 30-day outcome."</p>
       </div>
       <div class="card">
         <h3>💰 Plan Upgrade Surface</h3>
-        <p>If acquisition is optimised, the frontier is AOV trajectory. Are customers on the 1-month plan being given a reason and moment to upgrade post-break-in? The doctor relationship = enormous trust asset for upsell.</p>
+        <p>If acquisition is optimised, the frontier is AOV trajectory. Are customers on the entry plan being given a reason and moment to upgrade post-activation? The clinician relationship is an enormous trust asset for upsell.</p>
       </div>
       <div class="card">
         <h3>🔍 Traffic Mix Quality</h3>
         <p>Even best-in-class overall CVR can hide a poorly-converting segment averaged with a strong one. Segment by acquisition channel before declaring success. Blended numbers hide broken channels.</p>
       </div>
     </div>
-
     <div class="quote-block">
-      "Most CRO practitioners optimise for conversion rate. I think optimising for conversion rate is often the wrong goal. The metric I actually care about is quality-adjusted conversion — how many people we converted were right for the product. You should never want to convert a customer who isn't a good clinical fit, even if the funnel mechanics could push them through."
-      <strong>— Roy Q11: Your most differentiating answer. Deliver with confidence.</strong>
+      "Most growth practitioners optimise for conversion rate. I think optimising for conversion rate is often the wrong goal. The metric I actually care about is quality-adjusted conversion — how many people we converted were right for the product. You should never want to convert a customer who isn't a good clinical fit, even if the funnel mechanics could push them through."
+      <strong>— The differentiating principle on growth in high-trust subscription commerce.</strong>
     </div>
   </div>
 
-  <!-- ROY Q&A FIREPOWER -->
-  <div id="firepower" class="section">
+  <!-- PM PRINCIPLES -->
+  <div id="principles" class="section">
     <div class="section-header">
-      <h2>Roy Q&A Firepower</h2>
-      <p>Quick-reference answers for each VC round question. One-line opening hook for each.</p>
+      <h2>PM Principles &amp; Strategic Thinking</h2>
+      <p>Strongly held beliefs, decision-making frameworks, and honest self-awareness about gaps — each with a plan.</p>
     </div>
-
     <div style="display: flex; flex-direction: column; gap: 12px;">
 
       <div class="story-card">
         <div class="story-header">
-          <h3>Q1 — Experimentation framework from scratch</h3>
-          <span class="pill pill-green">Category 1</span>
+          <h3>Building Experimentation from Scratch</h3>
+          <span class="pill pill-green">Frameworks · Governance</span>
         </div>
-        <div style="font-size: 13px; color: var(--muted); margin-bottom: 12px;"><strong style="color: var(--accent);">Open with:</strong> "I didn't inherit a framework — I built it. The tooling was easy. The hardest decisions were all about governance."</div>
+        <div style="font-size: 13px; color: var(--muted); margin-bottom: 12px;"><strong style="color: var(--accent);">Anchor:</strong> "I didn't inherit a framework — I built it. The tooling was easy. The hardest decisions were all about governance."</div>
         <div class="story-body">
           <div class="story-cell"><div class="story-cell-label">The System</div><div class="story-cell-value">5 layers: Multi-signal → Hypothesis System → Test Protocol → Governance (max 2 concurrent) → Knowledge System</div></div>
-          <div class="story-cell"><div class="story-cell-label">Hardest Decision</div><div class="story-cell-value">Enforcing the governance rule. Stakeholders wanted 5 concurrent tests. Data contamination story stopped the argument.</div></div>
-          <div class="story-cell"><div class="story-cell-label">Voy Link</div><div class="story-cell-value">Test contamination in health context doesn't just cost data quality — it could influence clinical perception of results.</div></div>
+          <div class="story-cell"><div class="story-cell-label">Hardest Decision</div><div class="story-cell-value">Enforcing the governance rule. Stakeholders wanted 5 concurrent tests. The data contamination story stopped the argument.</div></div>
+          <div class="story-cell"><div class="story-cell-label">Why It Matters</div><div class="story-cell-value">Test contamination in health contexts doesn't just cost data quality — it can influence perception of clinical results. The governance discipline is non-negotiable.</div></div>
         </div>
       </div>
 
       <div class="story-card">
         <div class="story-header">
-          <h3>Q10 — CVR already best in class</h3>
-          <span class="pill pill-orange">Pressure Test</span>
+          <h3>When CVR is Already Best in Class</h3>
+          <span class="pill pill-orange">Strategic Pivots · LTV</span>
         </div>
-        <div style="font-size: 13px; color: var(--muted); margin-bottom: 12px;"><strong style="color: var(--accent);">Open with:</strong> "Great — that means we're done with acquisition optimisation. Let's talk about what comes after the first subscription."</div>
+        <div style="font-size: 13px; color: var(--muted); margin-bottom: 12px;"><strong style="color: var(--accent);">Anchor:</strong> "Great — that means we're done with acquisition optimisation. Let's talk about what comes after the first subscription."</div>
         <div class="story-body">
-          <div class="story-cell"><div class="story-cell-label">Move 1</div><div class="story-cell-value">Month-1 activation quality. Break-in phase experience. Doctor-attributed personalisation.</div></div>
-          <div class="story-cell"><div class="story-cell-label">Move 2</div><div class="story-cell-value">Plan upgrade surface. AOV trajectory post-break-in. Trust asset → upsell moment.</div></div>
-          <div class="story-cell"><div class="story-cell-label">Move 3</div><div class="story-cell-value">Passive churn. Payment failure. Pause-vs-cancel. Pre-renewal reminders. All untouched.</div></div>
+          <div class="story-cell"><div class="story-cell-label">Move 1</div><div class="story-cell-value">Month-1 activation quality. Break-in phase experience. Clinician-attributed personalisation post-onboarding.</div></div>
+          <div class="story-cell"><div class="story-cell-label">Move 2</div><div class="story-cell-value">Plan upgrade surface. AOV trajectory post-activation. Trust asset → natural upsell moment.</div></div>
+          <div class="story-cell"><div class="story-cell-label">Move 3</div><div class="story-cell-value">Passive churn. Payment failure. Pause-vs-cancel. Pre-renewal reminders. Usually entirely untouched.</div></div>
           <div class="story-cell"><div class="story-cell-label">Move 4</div><div class="story-cell-value">Traffic mix quality. Blended CVR hides broken channels. Segment before declaring best-in-class.</div></div>
         </div>
       </div>
 
       <div class="story-card">
         <div class="story-header">
-          <h3>Q11 — Strongly held CRO belief others disagree with</h3>
-          <span class="pill pill-pink">Differentiator</span>
+          <h3>Strongly Held Belief: Optimise for Quality, Not Rate</h3>
+          <span class="pill pill-pink">Conviction · Differentiation</span>
         </div>
-        <div style="font-size: 13px; color: var(--muted); margin-bottom: 12px;"><strong style="color: var(--accent);">Open with:</strong> "Optimising for conversion rate is often the wrong goal."</div>
+        <div style="font-size: 13px; color: var(--muted); margin-bottom: 12px;"><strong style="color: var(--accent);">Anchor:</strong> "Optimising for conversion rate is often the wrong goal."</div>
         <div class="story-body">
           <div class="story-cell"><div class="story-cell-label">The Belief</div><div class="story-cell-value">Quality-adjusted conversion is the real metric. CVR that increases low-confidence conversions destroys more LTV than it creates.</div></div>
-          <div class="story-cell"><div class="story-cell-label">The Proof</div><div class="story-cell-value">Deliberately dropped CVR 20% → cancellations halved. LTV improved. Now part of the investor story.</div></div>
-          <div class="story-cell"><div class="story-cell-label">Voy Stakes</div><div class="story-cell-value">Never convert a customer who isn't a good clinical fit. The funnel mechanics can push them through. You should never let them.</div></div>
+          <div class="story-cell"><div class="story-cell-label">The Proof</div><div class="story-cell-value">Deliberately dropped CVR 20% → cancellations halved. LTV improved. The decision became part of the investor story.</div></div>
+          <div class="story-cell"><div class="story-cell-label">Stakes in Health</div><div class="story-cell-value">Never convert a customer who isn't a good clinical fit. The funnel mechanics can push anyone through. A responsible PM never lets them.</div></div>
         </div>
       </div>
 
       <div class="story-card">
         <div class="story-header">
-          <h3>Q13 — What you don't know yet</h3>
-          <span class="pill pill-purple">Self-Awareness</span>
+          <h3>Honest Gaps — Each With a Plan</h3>
+          <span class="pill pill-purple">Self-Awareness · Growth</span>
         </div>
-        <div style="font-size: 13px; color: var(--muted); margin-bottom: 12px;"><strong style="color: var(--accent);">Open with:</strong> "Two honest gaps — both have a plan."</div>
+        <div style="font-size: 13px; color: var(--muted); margin-bottom: 12px;"><strong style="color: var(--accent);">Anchor:</strong> "Two honest gaps — both have a clear plan."</div>
         <div class="story-body">
           <div class="story-cell"><div class="story-cell-label">Gap 1</div><div class="story-cell-value">Clinical trust layer. How it's built and broken in a subscription health context. Plan: embed with medical team in first 30 days. Study cancellation language in depth.</div></div>
-          <div class="story-cell"><div class="story-cell-label">Gap 2</div><div class="story-cell-value">Cross-vertical platform thinking. Derma → weight loss → menopause shared infrastructure. Plan: get up to speed on architecture direction quickly — a PM who doesn't understand platform direction is a liability in roadmap conversations.</div></div>
+          <div class="story-cell"><div class="story-cell-label">Gap 2</div><div class="story-cell-value">Cross-vertical platform thinking. Shared infrastructure across multiple health verticals. Plan: get up to speed on architecture direction quickly — a PM who doesn't understand platform direction is a liability in roadmap conversations.</div></div>
         </div>
       </div>
 
     </div>
-
     <div class="divider"></div>
-    <div class="section-label">Your Counter Question for Roy</div>
+    <div class="section-label">For Platform Leaders — The Strategic Question</div>
     <div class="quote-block">
-      "You're building a platform across multiple health verticals — derma, weight loss, menopause, hair loss. How does the product team currently think about shared infrastructure — a shared experimentation layer, shared data, shared design system — vs vertical-specific product decisions? That question shapes how I'd think about my roadmap from day one."
-      <strong>— Save this for end of Roy round. Not HR.</strong>
+      "You're building a platform across multiple health verticals. How does the product team currently think about shared infrastructure — a shared experimentation layer, shared data, shared design system — vs vertical-specific product decisions? That question shapes how roadmap priorities should be set from the start, and whether learning compounds across verticals or stays siloed."
+      <strong>— Use this in strategic conversations with hiring managers and cross-functional leaders.</strong>
     </div>
-
-    <div class="section-label" style="margin-top: 32px;">Interview Discipline Reminders</div>
+    <div class="section-label" style="margin-top: 32px;">Communication Principles</div>
     <div class="grid-3">
       <div class="card">
         <h3>⏸️ Pause Before Answering</h3>
-        <p>Pause. Restate the question briefly: "So what you're really asking is..." This signals thinking, not performance. Roy stress-tests thinking systems, not rehearsed stories.</p>
+        <p>Pause. Restate the question briefly: "So what you're really asking is..." This signals thinking, not performance. Strong leaders test for thinking systems, not rehearsed answers.</p>
       </div>
       <div class="card">
         <h3>📈 Always Land One Level Up</h3>
-        <p>Connect every tactic to LTV, CAC, payback period, or investor narrative. Roy sees across the full Manual platform. Speak to that level consistently.</p>
+        <p>Connect every tactic to LTV, CAC, payback period, or investor narrative. Think at the platform level — consistently. Speak to the business model, not just the feature.</p>
       </div>
       <div class="card">
         <h3>🥊 Treat Pushback as Sparring</h3>
